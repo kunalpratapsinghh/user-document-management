@@ -1,7 +1,7 @@
 
-# NestJS Bull Queue Implementation
+# NestJS Document Management Implementation with Queue Service
 
-This project demonstrates the integration of [Bull](https://github.com/OptimalBits/bull), a popular Redis-based queue library, with a NestJS application for efficient background task processing.
+This project demonstrates the integration of Bull, a popular Redis-based queue library, with a NestJS application for efficient background task processing.
 
 ---
 
