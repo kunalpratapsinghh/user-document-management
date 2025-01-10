@@ -27,8 +27,8 @@ This project demonstrates the integration of [Bull](https://github.com/OptimalBi
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/kunalpratapsinghh/user-document-management>
+   cd user-document-management
    ```
 
 2. Install dependencies:
@@ -170,34 +170,8 @@ Ensure your Redis server is running and accessible at `localhost:6379`.
    @Process('processDocument')
    async handleDocumentProcessing(job: Job<{ documentId: string }>) {
      console.log(`Processing document with ID: ${job.data.documentId}`);
-     // Your processing logic here
    }
    ```
-
----
-
-## Debugging
-
-- **Redis Connection**: Verify Redis is running at the correct host and port.
-- **Queue Monitoring**: Use [Bull Dashboard](https://github.com/vcapretz/bull-board) for queue monitoring.
-- **Job Failures**: Implement error handling in your processor and retry logic in the queue configuration.
-
----
-
-## Contributing
-
-Contributions are welcome! Please follow the standard Git flow for contributing:
-
-1. Fork the repository.
-2. Create a new branch (`feature/my-feature`).
-3. Commit your changes.
-4. Submit a pull request.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ---
 
