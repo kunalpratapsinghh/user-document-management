@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { BullModule } from '@nestjs/bull';
 import { BullQueueService } from './bull-queue.service';
 import { BullQueueProcessor } from './bull-queue.processor';
-import { OcrModule } from 'src/ocr/ocr.module';
+import { OcrModule } from '../ocr/ocr.module';
 
 @Module({
   imports: [

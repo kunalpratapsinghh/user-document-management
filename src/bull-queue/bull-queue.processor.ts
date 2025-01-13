@@ -1,6 +1,6 @@
 import { Processor, Process } from '@nestjs/bull';
 import { Job } from 'bull';
-import { OcrService } from 'src/ocr/ocr.service';
+import { OcrService } from '../ocr/ocr.service';
 
 @Processor('document-upload')
 export class BullQueueProcessor {

@@ -1,9 +1,9 @@
 import { Body, Controller, Param, Post, Put, Req, UseGuards } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import { CreateUserDto } from 'src/dto/create-user.dto';
-import { LoginUserDto } from 'src/dto/login-user.dto';
-import { RolesGuard } from 'src/rolePermission/roles.guard';
-import { Roles } from 'src/rolePermission/roles.decorator';
+import { CreateUserDto } from '../dto/create-user.dto';
+import { LoginUserDto } from '../dto/login-user.dto';
+import { RolesGuard } from '../rolePermission/roles.guard';
+import { Roles } from '../rolePermission/roles.decorator';
 import { AuthGuard } from '@nestjs/passport';
 
 @Controller('auth')
